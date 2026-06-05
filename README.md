@@ -77,14 +77,4 @@ Works on all modern browsers that support:
 - [ ] Mobile touch controls
 - [ ] Achievements/badges system
 
-## License
 
-This project is open source and available under the MIT License.
-
-## Author
-
-Created with 
-
----
-
-**Enjoy the game and challenge yourself with gravity!**
