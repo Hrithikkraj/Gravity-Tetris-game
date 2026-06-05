@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="space-background"></div>
+
+<div id="app-container">
+    <div id="left-panel" class="glass-panel">
+        <div class="panel-box">
+            <h3>HIGH SCORE</h3>
+            <div id="high-score">0</div>
+        </div>
+        <div class="panel-box">
+            <h3>SCORE</h3>
+            <div id="score">0</div>
+        </div>
+        <div class="panel-box">
+            <h3>LEVEL</h3>
+            <div id="level">1</div>
+        </div>
+        <div class="panel-box">
+            <h3>GRAVITY</h3>
+            <div id="gravity-indicator" class="glow-text">⬇️ DOWN (S)</div>
+        </div>
+        <div class="controls-hint">
+            <p><span class="key">Arrows</span> Move/Rotate</p>
+            <p><span class="key">Space</span> Hard Drop</p>
+            <p><span class="key">WASD</span> Gravity</p>
+        </div>
+    </div>
+
+    <div id="game-wrapper">
+        <div class="scanlines"></div>
+        <canvas id="game-canvas" width="300" height="600"></canvas>
+        <div id="overlay" class="show glass-panel">
+            <h2 id="overlay-title">GRAVITY<br>TETRIS</h2>
+            <div id="overlay-text">System Ready</div>
+            <button id="start-btn" class="cyber-btn">INITIALIZE</button>
+        </div>
+    </div>
+
+    <div id="right-panel" class="glass-panel">
+        <div class="panel-box">
+            <h3>NEXT PIECE</h3>
+            <canvas id="next-canvas" width="120" height="120"></canvas>
+        </div>
+        <button id="restart-btn" class="cyber-btn" disabled>REBOOT</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
